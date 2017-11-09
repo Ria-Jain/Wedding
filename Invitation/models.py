@@ -5,7 +5,6 @@ from django.utils import timezone
 class Wishe(models.Model):
     author = models.CharField(max_length=200)
     text = models.TextField()
-    relationship=models.CharField(max_length=200)
     created_date = models.DateTimeField(
             default=timezone.now)
     def __str__(self):

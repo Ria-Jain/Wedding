@@ -17,6 +17,8 @@
     <link href="../static/css/owl-carousel/owl.carousel.min.css" rel="stylesheet">
     <link href="../static/css/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
     <link href="../static/css/main.css" rel="stylesheet">
+    <link href="../static/css/countdown.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
     <!--if lt IE 9-->
     <script src="../static/js/html5shiv.min.js"></script>
@@ -25,7 +27,7 @@
   <body>
     <header>
       <!-- NAVBAR SECTION-->
-      <nav class="navbar navbar-expand-lg fixed-top">
+      <!-- <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid"><a class="navbar-brand" href="#"><img src="../static/../static/img/clarissa-logo.svg" alt="clarissa logo"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-section" aria-control="navbar-section" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbar-section">
@@ -42,7 +44,7 @@
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> -->
       <!-- BANNER SECTION-->
       <section id="banner-standart-1" style="background-image:url('../static/img/banner-img.jpg');">
         <div class="container-fluid">
@@ -66,7 +68,7 @@
                 <li>12</li>
                 <li><span class="dot"></span></li>
                 <!-- wedding year-->
-                <li>17</li>
+                <li>2017</li>
               </ul>
             </div>
             <div class="banner-detail">
@@ -90,18 +92,32 @@
           <div class="row justify-content-center">
             <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
               <!-- sub heading section-->
-              <h6 class="text-capitalize">welcome</h6>
+              <h6 class="text-capitalize" style="font-size: 40px">countdown to the special day</h6>
               <!-- heading section-->
-              <h2 class="text-capitalize">the special day</h2>
             </div>
           </div>
           <div class="row justify-content-center">
             <div class="section-body col-sm-8">
               <!-- welcome message-->
-              <p class="text-center">
-                My fiancé proposed on the Fourth of July. My mother asked us to go to the backyard to get some chairs and he took me by the shed where we could see all of the fireworks. He kissed me, then he took the ring box out of his pocket and asked me to be his wife. He was shaking a little. The proposal was a little silly but perfect, just like him."
-                <span>— Jeska Cords</span>
-              </p>
+  <div id="clockdiv">
+    <div>
+      <span class="days"></span>
+      <div class="smalltext">Days</div>
+    </div>
+    <div>
+      <span class="hours"></span>
+      <div class="smalltext">Hours</div>
+    </div>
+    <div>
+      <span class="minutes"></span>
+      <div class="smalltext">Minutes</div>
+    </div>
+    <div>
+      <span class="seconds"></span>
+      <div class="smalltext">Seconds</div>
+    </div>
+  </div>
+
             </div>
           </div>
         </div>
@@ -151,11 +167,10 @@
             <div class="col-sm-6 col-md-8 text-center">
               <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
                 <!-- sub heading section-->
-                <h6 class="text-capitalize">the bride's family</h6>
+                <h6 class="text-capitalize" style="font-size:40px">the bride's family</h6>
                 <!-- heading section-->
               </div>
               <!-- section description-->
-              <p>My fiancé proposed on the Fourth of July. My mother asked us to go to the backyard to get some chairs and he took me by the shed where we could see all of the fireworks.</p>
             </div>
           </div>
           <div class="section-body row">
@@ -267,11 +282,10 @@
             <div class="col-sm-6 col-md-8 text-center">
               <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
                 <!-- sub heading section-->
-                <h6 class="text-capitalize">the groom's family</h6>
+                <h6 class="text-capitalize" style="font-size:40px">the groom's family</h6>
                 <!-- heading section-->
               </div>
               <!-- section description-->
-              <p>My fiancé proposed on the Fourth of July. My mother asked us to go to the backyard to get some chairs and he took me by the shed where we could see all of the fireworks.</p>
             </div>
           </div>
           <div class="section-body row">
@@ -467,33 +481,17 @@
           </div>
         </div>
       </section>
-      <!-- TESTIMONY SECTION-->
-      <section id="testimony-section">
-        <div class="section-background">
-          <div class="flower right"><img src="../static/img/flower.png" alt="section background image"/></div>
-          <div class="flower left"><img src="../static/img/flower.png" alt="section background image"/></div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="testimony-section-content col-md-8 mx-auto">
-              <div class="testimony-section-message">
-                <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
-                  <!-- sub heading section-->
-                  <h6 class="text-capitalize">best friend</h6>
-                  <!-- heading section-->
-                  <h2 class="text-capitalize">alexandria</h2>
-                </div>
-                <!-- testimony message-->
-                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- GALLERY SECTION-->
-      <section id="gallery-section">
+      <section id="gallery-section" style=" padding: 170px 0;">
         <div class="container-fluid">
+            <div class="section-header">
+              <img src="../static/img/flower-bw.png" alt="flower logo"/>
+                  <!-- sub heading section-->
+              <h6 class="text-capitalize" style=" font-size: 40px;">our story</h6>
+            </div>
+            <br>    
           <div class="row no-gutters">
+
             <div class="gallery-section-item col-md-6 col-lg-6 col-xl-3">
               <!-- gallery photo--><img src="../static/img/gallery-img-1.jpg" alt="gallery image">
               <div class="gallery-section-detail">
@@ -546,158 +544,6 @@
                 <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
               </div>
             </div>
-            <div class="gallery-section-item col-md-6 col-lg-6 col-xl-3">
-              <!-- gallery photo--><img src="../static/img/gallery-img-5.jpg" alt="gallery image">
-              <div class="gallery-section-detail">
-                <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
-                  <!-- sub heading section-->
-                  <h6 class="text-capitalize">traveling</h6>
-                  <!-- heading section-->
-                  <h2 class="text-capitalize">two weeks in mexico</h2>
-                </div>
-                <!-- gallery photo description-->
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
-              </div>
-            </div>
-            <div class="gallery-section-item col-md-6 col-lg-6 col-xl-3">
-              <!-- gallery photo--><img src="../static/img/gallery-img-6.jpg" alt="gallery image">
-              <div class="gallery-section-detail">
-                <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
-                  <!-- sub heading section-->
-                  <h6 class="text-capitalize">traveling</h6>
-                  <!-- heading section-->
-                  <h2 class="text-capitalize">two weeks in mexico</h2>
-                </div>
-                <!-- gallery photo description-->
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
-              </div>
-            </div>
-            <div class="gallery-section-item col-md-6 col-lg-6 col-xl-3">
-              <!-- gallery photo--><img src="../static/img/gallery-img-7.jpg" alt="gallery image">
-              <div class="gallery-section-detail">
-                <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
-                  <!-- sub heading section-->
-                  <h6 class="text-capitalize">traveling</h6>
-                  <!-- heading section-->
-                  <h2 class="text-capitalize">two weeks in mexico</h2>
-                </div>
-                <!-- gallery photo description-->
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
-              </div>
-            </div>
-            <div class="gallery-section-item col-md-6 col-lg-6 col-xl-3">
-              <!-- gallery photo--><img src="../static/img/gallery-img-8.jpg" alt="gallery image">
-              <div class="gallery-section-detail">
-                <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
-                  <!-- sub heading section-->
-                  <h6 class="text-capitalize">traveling</h6>
-                  <!-- heading section-->
-                  <h2 class="text-capitalize">two weeks in mexico</h2>
-                </div>
-                <!-- gallery photo description-->
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- BLOG SECTION-->
-      <section id="blog-section">
-        <div class="container">
-          <div class="row">
-            <div class="blog-section-head col-sm-6 col-md-8 mx-auto">
-              <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
-                <!-- sub heading section-->
-                <h6 class="text-capitalize">story of love</h6>
-                <!-- heading section-->
-                <h2 class="text-capitalize">our special journal</h2>
-              </div>
-              <!-- section description-->
-              <p>My fiancé proposed on the Fourth of July. My mother asked us to go to the backyard to get some chairs and he took me by the shed where we could see all of the fireworks. </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="blog-section-body col-md-8 col-lg-4 mx-auto">
-              <div class="blog-card">
-                <div class="blog-card-head">
-                  <!-- blog thumbnail--><img src="../static/img/blog-img-1.jpg" alt="blog image">
-                </div>
-                <div class="blog-card-body">
-                  <div class="blog-card-detail">
-                    <ul class="blog-card-date">
-                      <!-- blog date-->
-                      <li>24</li>
-                      <!-- blog month-->
-                      <li class="text-uppercase">mar</li>
-                    </ul>
-                    <div class="blog-card-title">
-                      <!-- blog categoriez-->
-                      <h6 class="text-capitalize">wedding</h6>
-                      <!-- blog titlt-->
-                      <h3 class="text-capitalize">story of love</h3>
-                    </div>
-                  </div>
-                  <div class="blog-card-description">
-                    <!-- blog description-->
-                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p><a class="btn btn-default text-capitalize" href="blog-post-standart.html">read more</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="blog-section-body col-md-8 col-lg-4 mx-auto">
-              <div class="blog-card">
-                <div class="blog-card-head">
-                  <!-- blog thumbnail--><img src="../static/img/blog-img-2.jpg" alt="blog image">
-                </div>
-                <div class="blog-card-body">
-                  <div class="blog-card-detail">
-                    <ul class="blog-card-date">
-                      <!-- blog date-->
-                      <li>24</li>
-                      <!-- blog month-->
-                      <li class="text-uppercase">mar</li>
-                    </ul>
-                    <div class="blog-card-title">
-                      <!-- blog categoriez-->
-                      <h6 class="text-capitalize">wedding</h6>
-                      <!-- blog titlt-->
-                      <h3 class="text-capitalize">we're happy</h3>
-                    </div>
-                  </div>
-                  <div class="blog-card-description">
-                    <!-- blog description-->
-                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p><a class="btn btn-default text-capitalize" href="blog-post-standart.html">read more</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="blog-section-body col-md-8 col-lg-4 mx-auto">
-              <div class="blog-card">
-                <div class="blog-card-head">
-                  <!-- blog thumbnail--><img src="../static/img/blog-img-3.jpg" alt="blog image">
-                </div>
-                <div class="blog-card-body">
-                  <div class="blog-card-detail">
-                    <ul class="blog-card-date">
-                      <!-- blog date-->
-                      <li>24</li>
-                      <!-- blog month-->
-                      <li class="text-uppercase">mar</li>
-                    </ul>
-                    <div class="blog-card-title">
-                      <!-- blog categoriez-->
-                      <h6 class="text-capitalize">wedding</h6>
-                      <!-- blog titlt-->
-                      <h3 class="text-capitalize">travel again</h3>
-                    </div>
-                  </div>
-                  <div class="blog-card-description">
-                    <!-- blog description-->
-                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p><a class="btn btn-default text-capitalize" href="blog-post-standart.html">read more</a>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -705,34 +551,29 @@
       <section id="gift-section">
         <div class="container">
           <div class="row">
-            <div class="gift-card col-md-7 col-lg-4 mx-auto">
-              <div class="gift-card-head">
-                <!-- gift or brand logo--><img src="../static/img/gift-logo-img-1.png" alt="gift logo">
-              </div>
-              <div class="gift-card-body">
-                <!-- gift or brand description-->
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
-              </div>
+            <div class="owl-carousel owl-theme" >
+                {% for w in wishes %}
+                  <div class="gift-card mx-auto">
+                    <div class="gift-card-body" style="position: relative;min-height: 200px;">
+                    <div class="item"> 
+                      <!-- <div> 
+                          <h6 class="text-capitalize" style="font-size: 40px; color: #79578e;">{{w.author}}</h6>
+                      </div> -->
+                      <div>  
+                        <p>"{{w.text}}"</p>
+                      </div>
+                      <div> 
+                          <h6 class="text-capitalize" style="font-size: 40px; color: #79578e;position: absolute; bottom: 0;right:  0">-{{w.author}}</h6>
+                      </div>
+                      <!-- <div>
+                        <p style="position: absolute; bottom: 0; left: 50%;">-{{w.author}}</p>
+                      </div> -->
+                    </div>
+                  </div>
+                  </div>
+                {% endfor %}
             </div>
-            <div class="gift-card col-md-7 col-lg-4 mx-auto">
-              <div class="gift-card-head">
-                <!-- gift or brand logo--><img src="../static/img/gift-logo-img-2.png" alt="gift logo">
-              </div>
-              <div class="gift-card-body">
-                <!-- gift or brand description-->
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
-              </div>
-            </div>
-            <div class="gift-card col-md-7 col-lg-4 mx-auto">
-              <div class="gift-card-head">
-                <!-- gift or brand logo--><img src="../static/img/gift-logo-img-3.png" alt="gift logo">
-              </div>
-              <div class="gift-card-body">
-                <!-- gift or brand description-->
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
-              </div>
-            </div>
-          </div>
+        </div>
         </div>
       </section>
       <!-- RSPV SECTION-->
@@ -743,43 +584,27 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="rspv-section-head col-sm-12 col-lg-8 mx-auto">
+            <div class="rspv-section-head col-sm-12 col-lg-8 mx-auto" style="margin-bottom: -40px;">
               <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
                 <!-- sub heading section-->
-                <h6 class="text-capitalize">are you attend?</h6>
-                <!-- heading section-->
-                <h2 class="text-capitalize">the reservation</h2>
+                <h6 class="text-capitalize" style="font-size: 50px;">send a wish</h6>
               </div>
-              <!-- section description-->
-              <p class="text-center">My fiancé proposed on the Fourth of July. My mother asked us to go to the backyard to get some chairs and he took me by the shed where we could see all of the fireworks. </p>
             </div>
-          </div>
-          <div class="row">
             <div class="rspv-section-body col-sm-12 col-lg-10 mx-auto">
-              <form>
+              <form action="#" method="post" id="wish">
+                {% csrf_token %}
                 <div class="row rspv-section-input-area">
-                  <div class="col-sm-6">
+                  <div class="col-sm-12">
                     <div class="form-group">
                       <label class="sr-only" for="name">your name</label>
-                      <input class="form-control" type="text" id="name" placeholder="your name">
-                    </div>
-                    <div class="form-group">
-                      <label class="sr-only" for="email">your email</label>
-                      <input class="form-control" type="email" id="email" placeholder="your email">
-                    </div>
-                    <div class="form-group">
-                      <label class="sr-only" for="attend">are you attend</label>
-                      <select class="form-control" id="attend">
-                        <option>are you attend</option>
-                        <option>yes</option>
-                        <option>no</option>
-                      </select>
+                      <input class="form-control" type="text" name="author" placeholder="your name">
                     </div>
                   </div>
-                  <div class="col-sm-6">
+                  <div class="col-sm-12">
                     <div class="form-group">
-                      <label class="sr-only" for="messsage">message</label>
-                      <textarea class="form-control" id="message" placeholder="message"></textarea>
+                      <label class="sr-only" for="messsage">your wish</label>
+                      <textarea class="form-control" name="message" placeholder="message" maxlength="200"></textarea>
+                      <p>Please restrict your message to 200 characters</p>
                     </div>
                   </div>
                 </div>
@@ -801,11 +626,11 @@
           <div class="row">
             <div class="col-sm-12 col-lg-6 mx-auto">
               <!-- the names of bride and the grooms name-->
-              <h6 class="text-uppercase footer-head">jhon &amp; joan</h6>
+              <h6 class="text-uppercase footer-head">jinal &amp; harshad</h6>
               <!-- footer heading-->
               <h1 class="text-capitalize footer-body">thank you</h1>
               <!-- footer messages-->
-              <p class="text-uppercase footer-foot">see you there we hope you come</p>
+              <p class="text-uppercase footer-foot">we hope to see you and your spouse there</p>
             </div>
           </div>
         </div>
@@ -826,6 +651,57 @@
     <script src="../static/js/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="../static/js/owl-carousel/owl.carousel.min.js"></script>
     <script src="../static/js/main.js"></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      slideBy:3,
+  })
+    </script>
+    <script>
+      function getTimeRemaining(endtime) {
+  var t = endtime - new Date().getTime();
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date("Dec 11, 2017 18:00:00").getTime();
+initializeClock('clockdiv', deadline);
+    </script>
   </body>
 
 <!-- Mirrored from javatheme.com/clarissa-v2/homepage-standart-01.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Nov 2017 15:48:19 GMT -->
