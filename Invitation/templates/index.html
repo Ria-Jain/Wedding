@@ -23,6 +23,12 @@
     <!--if lt IE 9-->
     <script src="../static/js/html5shiv.min.js"></script>
     <script src="../static/js/respond.min.js"></script>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
   </head>
   <body>
     <header>
@@ -46,14 +52,16 @@
         </div>
       </nav> -->
       <!-- BANNER SECTION-->
-      <section id="banner-standart-1" style="background-image:url('../static/img/banner-img.jpg');">
+      <section id="banner-standart-1" style="background-image:url('../static/img/banner-img3.jpg');   ">
+          <!-- <img style="height:150px;position: absolute; left:0;top:0;" src="../static/img/logo2.png"> -->
         <div class="container-fluid">
           <div class="banner-content">
             <div class="banner-sub-heading">
               <!-- this is sub heading-->
-              <h2 class="text-uppercase">save the date</h2>
+              <h2 class="text-uppercase" style="position: absolute; left: 29%; top:5%;font-size: 40px">save the date</h2>
             </div>
             <div class="banner-heading">
+              <!-- <img style="height:200px; width:200px;position: absolute; left:0;" src="../static/img/logo.png"> -->
               <div class="flower left"><img src="../static/img/flower.svg" alt="banner flower image"></div>
               <div class="flower right"><img src="../static/img/flower.svg" alt="banner flower image"></div>
               <!-- the names of the bride and the groom    -->
@@ -73,9 +81,9 @@
             </div>
             <div class="banner-detail">
               <!-- wedding location-->
-              <h3 class="text-capitalize">st. gabriel's church</h3>
+              <h3 class="text-capitalize" style="font-size:40px">mayfair rooms</h3>
               <!-- wedding time-->
-              <p class="text-uppercase">at six o'clock in the evening sacramento california</p>
+              <p class="text-uppercase">at one o'clock in the afternoon</p>
             </div>
           </div>
         </div>
@@ -85,12 +93,12 @@
       <!-- WELCOME SECTION  -->
       <section id="welcome-section">
         <div class="section-background">
-          <div class="flower right"><img src="../static/img/flower.png" alt="section background image"/></div>
-          <div class="flower left"><img src="../static/img/flower.png" alt="section background image"/></div>
+          <div class="flower right" style=" right:2%;"><img style="height:300px" src="../static/img/bride1.png" alt="section background image"/></div>
+          <div class="flower left" style=" left:2%;"><img style="height:320px" src="../static/img/groom1.png" alt="section background image"/></div>
         </div>
         <div class="container">
           <div class="row justify-content-center">
-            <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
+            <div class="section-header"><img src="../static/img/ganpati.png" alt="flower logo"/>
               <!-- sub heading section-->
               <h6 class="text-capitalize" style="font-size: 40px">countdown to the special day</h6>
               <!-- heading section-->
@@ -125,13 +133,13 @@
       <!-- BRIDE PROFILE SECTION-->
       <section id="bride-profile-section">
         <div class="profile-section-photo">
-          <!-- bride photo--><img src="../static/img/bride-bg.png" alt="bride photo">
+          <!-- bride photo--><img src="../static/img/IMG_4646.png" alt="bride photo">
         </div>
         <div class="container-fluid">   
           <div class="row align-items-center">
             <div class="profile-section-detail col-sm-5 col-md-12 col-lg-6 col-xl-5 ml-auto">
               <div class="profile-section-header">
-                <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
+                <div class="section-header"><img src="../static/img/ganpati2.png" alt="flower logo"/>
                   <!-- sub heading section-->
                   <h6 class="text-capitalize">the bride</h6>
                   <!-- heading section-->
@@ -165,9 +173,9 @@
         <div class="container">
           <div class="section-header row justify-content-center">
             <div class="col-sm-6 col-md-8 text-center">
-              <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
+              <div class="section-header"><img src="../static/img/ganpati.png" alt="flower logo"/>
                 <!-- sub heading section-->
-                <h6 class="text-capitalize" style="font-size:40px">the bride's family</h6>
+                <h6 class="text-capitalize" style="font-size:50px">the bride's family</h6>
                 <!-- heading section-->
               </div>
               <!-- section description-->
@@ -186,9 +194,9 @@
                     <!-- the bridesmaid or groomsmain photo--><img src="../static/img/family-img-1.jpg" alt="card profile photo">
                   </div>
                   <!-- the bridesmaid or groomsman title-->
-                  <h6 class="text-capitalize">sister</h6>
+                  <h6 class="text-capitalize">mom</h6>
                   <!-- the bridesmaid or groomsman name-->
-                  <h3 class="text-capitalize">alexandra</h3><span class="dot"></span>
+                  <h3 class="text-capitalize">usha</h3><span class="dot"></span>
                   <!-- the bridesmaid or groomsman messages-->
                   <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
                 </div>
@@ -208,7 +216,7 @@
                   <!-- the bridesmaid or groomsman title-->
                   <h6 class="text-capitalize">brother</h6>
                   <!-- the bridesmaid or groomsman name-->
-                  <h3 class="text-capitalize">gustavo</h3><span class="dot"></span>
+                  <h3 class="text-capitalize">jimit</h3><span class="dot"></span>
                   <!-- the bridesmaid or groomsman messages-->
                   <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
                 </div>
@@ -226,9 +234,9 @@
                     <!-- the bridesmaid or groomsmain photo--><img src="../static/img/family-img-3.jpg" alt="card profile photo">
                   </div>
                   <!-- the bridesmaid or groomsman title-->
-                  <h6 class="text-capitalize">friend</h6>
+                  <h6 class="text-capitalize">dad</h6>
                   <!-- the bridesmaid or groomsman name-->
-                  <h3 class="text-capitalize">shamanta</h3><span class="dot"></span>
+                  <h3 class="text-capitalize">rajesh</h3><span class="dot"></span>
                   <!-- the bridesmaid or groomsman messages-->
                   <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
                 </div>
@@ -246,11 +254,11 @@
           <div class="row align-items-center">
             <div class="profile-section-detail col-sm-5 col-md-12 col-lg-6 col-xl-5 mr-auto order-2">
               <div class="profile-section-header">
-                <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
+                <div class="section-header"><img src="../static/img/ganpati2.png" alt="flower logo"/>
                   <!-- sub heading section-->
                   <h6 class="text-capitalize">the groom</h6>
                   <!-- heading section-->
-                  <h2 class="text-capitalize">jhon doe</h2>
+                  <h2 class="text-capitalize">harshad bafna</h2>
                 </div>
               </div>
               <div class="profile-section-body">
@@ -280,9 +288,9 @@
         <div class="container">
           <div class="section-header row justify-content-center">
             <div class="col-sm-6 col-md-8 text-center">
-              <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
+              <div class="section-header"><img src="../static/img/ganpati.png" alt="flower logo"/>
                 <!-- sub heading section-->
-                <h6 class="text-capitalize" style="font-size:40px">the groom's family</h6>
+                <h6 class="text-capitalize" style="font-size:50px">the groom's family</h6>
                 <!-- heading section-->
               </div>
               <!-- section description-->
@@ -301,7 +309,7 @@
                     <!-- the bridesmaid or groomsmain photo--><img src="../static/img/family-img-1.jpg" alt="card profile photo">
                   </div>
                   <!-- the bridesmaid or groomsman title-->
-                  <h6 class="text-capitalize">sister</h6>
+                  <h6 class="text-capitalize">mom</h6>
                   <!-- the bridesmaid or groomsman name-->
                   <h3 class="text-capitalize">alexandra</h3><span class="dot"></span>
                   <!-- the bridesmaid or groomsman messages-->
@@ -341,7 +349,7 @@
                     <!-- the bridesmaid or groomsmain photo--><img src="../static/img/family-img-3.jpg" alt="card profile photo">
                   </div>
                   <!-- the bridesmaid or groomsman title-->
-                  <h6 class="text-capitalize">friend</h6>
+                  <h6 class="text-capitalize">dad</h6>
                   <!-- the bridesmaid or groomsman name-->
                   <h3 class="text-capitalize">shamanta</h3><span class="dot"></span>
                   <!-- the bridesmaid or groomsman messages-->
@@ -352,65 +360,102 @@
           </div>
         </div>
       </section>
+      <section id="welcome-section" style="background-color: #79578e; padding-top: 100px; padding-bottom: 50px">
+        <!-- <div class="section-background">
+          <div class="flower right" style=" right:2%;"><img style="height:300px" src="../static/img/bride2.png" alt="section background image"/></div>
+          <div class="flower left" style=" left:2%;"><img style="height:320px" src="../static/img/groom2.png" alt="section background image"/></div>
+        </div> -->
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="section-header">
+              <!-- <img src="../static/img/ganpati.png" alt="flower logo"/> -->
+              <!-- sub heading section-->
+              <h6 class="text-capitalize" style="font-size: 80px; color: #e2dbe7;">invitation</h6>
+              <!-- heading section-->
+                  <p style="font-size:16px; color: #e2dbe7">|| Shree Aadinathay Nahah ||<br>|| Shree Shanti Nathay Namah ||<br>|| Shree Ambe Mata Namah ||</p>
+                  <br>  
+                  <br>  
+
+                  <p style="font-size:20px; color: #e2dbe7">Smt. Usha & Shri Rajeshkumar Nagrajji</p>
+                  <br>  
+                  <p style="font-size:20px; color: #e2dbe7">SOLICIT YOUR BLESSINGS AND CORDIALLY INVITE YOU BOTH TO<br>THE AUSPICIOUS WEDDING CELEBRATIONS OF HER DAUGHTER</p>
+                  <br>  
+                  <br>  
+                  <h6 class="text-capitalize" style="font-size: 60px; padding-bottom: 5px; color: #e2dbe7;">jinal</h6>
+                  <p style="font-size:20px; color: #e2dbe7">(G/D/O. Late Smt. Kamlaben & Late Shri Nagrajji Sheshmalji Solanki, Sadri, Ranakpur)</p>
+                  <br>  
+                  <br>  
+                  <h6 class="text-capitalize" style="color: #e2dbe7;">weds</h6>
+                  <br>  
+                  <br> 
+                  <h6 class="text-capitalize" style="font-size: 60px; padding-bottom: 5px; color: #e2dbe7;">harshad</h6>
+                  <p style="font-size:20px; color: #e2dbe7">(G/S/O. Smt. Shantaben & Shri Chunilalji Bafna)<br>(S/O. Smt. Anita & Shri Vimal Bafna, Kirwa)</p>
+                  <br>
+                  <br>
+                  <br>  
+                  <br>  
+                  <p style="font-size:20px; color: #e2dbe7">On Monday, 11th December 2017.</p>
+                  <br>  
+                  <br>  
+                  <p style="font-size:20px; color: #e2dbe7">MAYFAIR ROOMS,<br>254-C, Dr Annie Besant Road,<br>Worli, Mumbai-400030</p>
+                  <br>  
+                  <br>
+                  <br>  
+                  <p style="font-size:25px; color: #e2dbe7">*VALET PARKING AVAILABLE</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
       <!-- EVENTS SECTION-->
       <section id="events-section">
         <div class="container-fluid">
           <div class="row">
             <div class="event-detail col-md-12 col-lg-6 align-self-center order-2">
               <div class="event-detail-header">
-                <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
+                <div class="section-header"><img src="../static/img/ganpati.png" alt="flower logo"/>
                   <!-- sub heading section-->
                   <h6 class="text-capitalize">wedding event</h6>
                   <!-- heading section-->
-                  <h2 class="text-capitalize">reception</h2>
+                  <h2 class="text-capitalize">Baraat Swagat</h2>
                 </div>
               </div>
-              <div class="event-detail-body">
+              <!-- <div class="event-detail-body"> -->
                 <!-- event description-->
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p>
-              </div>
-              <div class="event-detail-footer">
+                <!-- <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p> -->
+              <!-- </div> -->
+              <div class="event-detail-footer"  style="position:absolute; left:40%;">
                 <div class="time">
                   <!-- event time-->
-                  <h4>06:00</h4>
+                  <h4>10:30</h4>
                 </div>
-                <div class="address">
-                  <!-- event location-->
-                  <p class="text-capitalize">st. gabriele church</p>
-                  <!-- event address-->
-                  <p class="text-capitalize">sacramento california</p>
-                </div>
+                
               </div>
             </div>
             <div class="event-photo col-md-12 col-lg-6 order-1">
-              <!-- event photo--><img src="../static/img/event-img-1.jpg" alt="event photo">
+              <!-- event photo--><img src="https://i.pinimg.com/736x/bf/b3/e7/bfb3e73b19968e2b627e4cd6bdac72d1--the-groom-bride-groom.jpg" alt="event photo">
             </div>
           </div>
           <div class="row">
             <div class="event-detail col-md-12 col-lg-6 align-self-center order-1">
               <div class="event-detail-header">
-                <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
+                <div class="section-header"><img src="../static/img/ganpati.png" alt="flower logo"/>
                   <!-- sub heading section-->
                   <h6 class="text-capitalize">wedding event</h6>
                   <!-- heading section-->
-                  <h2 class="text-capitalize">ceremony</h2>
+                  <h2 class="text-capitalize">samdhi milan</h2>
                 </div>
               </div>
-              <div class="event-detail-body">
+              <!-- <div class="event-detail-body"> -->
                 <!-- event description-->
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p>
-              </div>
-              <div class="event-detail-footer">
+                <!-- <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p> -->
+              <!-- </div> -->
+              <div class="event-detail-footer" style="position:absolute; left:40%;">
                 <div class="time">
                   <!-- event time-->
-                  <h4>06:00</h4>
+                  <h4>11:00</h4>
                 </div>
-                <div class="address">
-                  <!-- event location-->
-                  <p class="text-capitalize">st. gabriele church</p>
-                  <!-- event address-->
-                  <p class="text-capitalize">sacramento california</p>
-                </div>
+                
               </div>
             </div>
             <div class="event-photo col-md-12 col-lg-6 order-2">
@@ -420,28 +465,23 @@
           <div class="row">
             <div class="event-detail col-md-12 col-lg-6 align-self-center order-2">
               <div class="event-detail-header">
-                <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
+                <div class="section-header"><img src="../static/img/ganpati.png" alt="flower logo"/>
                   <!-- sub heading section-->
                   <h6 class="text-capitalize">wedding event</h6>
                   <!-- heading section-->
-                  <h2 class="text-capitalize">dancing party</h2>
+                  <h2 class="text-capitalize">prithi bhoj</h2>
                 </div>
               </div>
-              <div class="event-detail-body">
+              <!-- <div class="event-detail-body"> -->
                 <!-- event description-->
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p>
-              </div>
-              <div class="event-detail-footer">
+                <!-- <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p> -->
+              <!-- </div> -->
+              <div class="event-detail-footer" style="position:absolute; left:36%;">
                 <div class="time">
                   <!-- event time-->
-                  <h4>06:00</h4>
+                  <h4>12:00-2:00</h4>
                 </div>
-                <div class="address">
-                  <!-- event location-->
-                  <p class="text-capitalize">st. gabriele church</p>
-                  <!-- event address-->
-                  <p class="text-capitalize">sacramento california</p>
-                </div>
+                
               </div>
             </div>
             <div class="event-photo col-md-12 col-lg-6 order-1">
@@ -451,105 +491,234 @@
           <div class="row">
             <div class="event-detail col-md-12 col-lg-6 align-self-center order-1">
               <div class="event-detail-header">
-                <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
+                <div class="section-header"><img src="../static/img/ganpati.png" alt="flower logo"/>
                   <!-- sub heading section-->
                   <h6 class="text-capitalize">wedding event</h6>
                   <!-- heading section-->
-                  <h2 class="text-capitalize">let's dinner</h2>
+                  <h2 class="text-capitalize">reception</h2>
                 </div>
               </div>
-              <div class="event-detail-body">
+              <!-- <div class="event-detail-body"> -->
                 <!-- event description-->
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p>
-              </div>
-              <div class="event-detail-footer">
+                <!-- <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p> -->
+              <!-- </div> -->
+              <div class="event-detail-footer" style="position:absolute; left:37%;">
                 <div class="time">
                   <!-- event time-->
-                  <h4>06:00</h4>
+                  <h4>1:00-3:00</h4>
                 </div>
-                <div class="address">
-                  <!-- event location-->
-                  <p class="text-capitalize">st. gabriele church</p>
-                  <!-- event address-->
-                  <p class="text-capitalize">sacramento california</p>
-                </div>
+                
               </div>
             </div>
             <div class="event-photo col-md-12 col-lg-6 order-2">
-              <!-- event photo--><img src="../static/img/event-img-4.jpg" alt="event photo">
+              <!-- event photo--><img src="http://md-img.matrimonycdn.com/sites/wp-content/uploads/nivoslider4wp_files/wp_2293_7_s.jpeg" alt="event photo">
+            </div>
+          </div>
+          <div class="row">
+            <div class="event-detail col-md-12 col-lg-6 align-self-center order-2">
+              <div class="event-detail-header">
+                <div class="section-header"><img src="../static/img/ganpati.png" alt="flower logo"/>
+                  <!-- sub heading section-->
+                  <h6 class="text-capitalize">wedding event</h6>
+                  <!-- heading section-->
+                  <h2 class="text-capitalize">hast milap</h2>
+                </div>
+              </div>
+              <!-- <div class="event-detail-body"> -->
+                <!-- event description-->
+                <!-- <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p> -->
+              <!-- </div> -->
+              <div class="event-detail-footer" style="position:absolute; left:36%;">
+                <div class="time">
+                  <!-- event time-->
+                  <h4 style="font-size: 20px;">Godhulik Bela</h4>
+                </div>
+                
+              </div>
+            </div>
+            <div class="event-photo col-md-12 col-lg-6 order-1">
+              <!-- event photo--><img src="http://ranivimi.com/wp-content/uploads/2013/12/slider_041.jpg" alt="event photo">
             </div>
           </div>
         </div>
       </section>
-      <!-- GALLERY SECTION-->
-      <section id="gallery-section" style=" padding: 170px 0;">
-        <div class="container-fluid">
+      <br>
+      <br>
+      <h6 class="text-capitalize" style="font-size: 60px; color: #79578e">Venue</h6>
+              <div class="row">
+              <div class="col-md-6" style="text-align: center">
+                  
+                  <div id="map"></div>
+                  <script>
+                    function initMap() {
+                      var uluru = {lat: 19.010108, lng: 72.821226};
+                      var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 14,
+                        center: uluru
+                      });
+                      var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                      });
+                    }
+                  </script>
+                  <script async defer
+                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUY2f4A9tx4z2v6MDY1VK-B4ct8sPoQfg&callback=initMap">
+                  </script>
+              </div>        
+              <div class="col-md-6">
+                <p style="font-size:20px; color:#79578e; vertical-align: center">MAYFAIR ROOMS,<br>254-C, Dr Annie Besant Road,<br>Worli, Mumbai-400030</p>
+              </div>   
+              </div>
+              <br>
+              <br>
+              
+      <section id="welcome-section" style="background-color: #79578e;">
+        <!-- <div class="section-background">
+          <div class="flower right" style=" right:2%;"><img style="height:300px" src="../static/img/bride1.png" alt="section background image"/></div>
+          <div class="flower left" style=" left:2%;"><img style="height:320px" src="../static/img/groom1.png" alt="section background image"/></div>
+        </div> -->
+        <div class="container">
+          <div class="row justify-content-center">
             <div class="section-header">
-              <img src="../static/img/flower-bw.png" alt="flower logo"/>
-                  <!-- sub heading section-->
-              <h6 class="text-capitalize" style=" font-size: 40px;">our story</h6>
+              <img style="top:20px" src="../static/img/ganpati2.png" alt="flower logo"/>
+              <!-- sub heading section-->
+              <h6 class="text-capitalize" style="font-size: 60px; color: #e2dbe7;">barat</h6>
+              <p style="font-size: 20px; color: #e2dbe7">Sha Vimal Kumarji Chunilalji Bafna, Kirwa</p>
+              <!-- heading section-->
+              <br>  
+              <br>
+              <br>  
+              <h6 class="text-capitalize" style="font-size: 60px; color: #e2dbe7;">mushala</h6>
+              <p style="font-size: 20px; color: #e2dbe7">Matushree Ansiben Ganeshmalji Hirachandji, Matiya, Sheoganj.<br>Champalalji, Anandji, Kishorji, Sanjayji</p>
             </div>
-            <br>    
-          <div class="row no-gutters">
-
-            <div class="gallery-section-item col-md-6 col-lg-6 col-xl-3">
-              <!-- gallery photo--><img src="../static/img/gallery-img-1.jpg" alt="gallery image">
-              <div class="gallery-section-detail">
-                <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
-                  <!-- sub heading section-->
-                  <h6 class="text-capitalize">traveling</h6>
-                  <!-- heading section-->
-                  <h2 class="text-capitalize">two weeks in mexico</h2>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section id="family-section">
+        <div class="container">
+          <div class="section-header row justify-content-center">
+            <div class="col-sm-6 col-md-8 text-center">
+              <div class="section-header"><img src="../static/img/ganpati.png" alt="flower logo"/>
+                <!-- sub heading section-->
+                <h6 class="text-capitalize" style="font-size:50px">special mentions</h6>
+                <!-- heading section-->
+              </div>
+              <!-- section description-->
+            </div>
+          </div>
+          <div class="section-body row">
+            <div class="col-sm-4 col-md-8 col-lg-4 mx-auto">
+              <div class="card-profile text-center">
+                <div class="card-profile-background"></div>
+                <div class="card-profile-content">
+                  <!-- the bridesmaid or groomsman title-->
+                  <h6 class="text-capitalize" style="font-size: 28px">with best wishes</h6>
+                  <br>  
+                  <br>  
+                  <br>  
+                  <p style="font-size: 16px">Babulalji Sagarmalji</p>
+                  <p style="font-size: 16px">Ramesh Gulabchandji</p>
+                  <p style="font-size: 16px">Arvind Pukhrajji</p>
+                  <p style="font-size: 16px">Bharat Chunilalji</p>
+                  <p style="font-size: 16px">Champak Nagrajji</p>
+                  <p style="font-size: 16px">Ashok Nagrajji</p>
+                  <p style="font-size: 16px">Mahendra Nagrajji</p>
+                  <p style="font-size: 16px">Rajesh Nagrajji</p>
+                  <p style="font-size: 16px">Suresh Harakchandji</p>
+                  <p style="font-size: 16px">Hasmukh Laxmichandji</p>
+                  <p style="font-size: 16px">Jimit Rajesh</p>
                 </div>
-                <!-- gallery photo description-->
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
               </div>
             </div>
-            <div class="gallery-section-item col-md-6 col-lg-6 col-xl-3">
-              <!-- gallery photo--><img src="../static/img/gallery-img-2.jpg" alt="gallery image">
-              <div class="gallery-section-detail">
-                <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
-                  <!-- sub heading section-->
-                  <h6 class="text-capitalize">traveling</h6>
-                  <!-- heading section-->
-                  <h2 class="text-capitalize">two weeks in mexico</h2>
+            <div class="col-sm-4 col-md-8 col-lg-4 mx-auto">
+              <div class="card-profile text-center">
+                <div class="card-profile-background"></div>
+                <div class="card-profile-content">
+                  <h6 class="text-capitalize" style="font-size: 28px">with best regards</h6>
+                  <br>  
+                  <br>  
+                  <br>  
+                  <p style="font-size: 16px">Kailash Bharatkumar</p>
+                  <p style="font-size: 16px">Ramila Champak</p>
+                  <p style="font-size: 16px">Hema Ashok</p>
+                  <p style="font-size: 16px">Sangeeta Mahendra</p>
+                  <p style="font-size: 16px">Usha Rajesh</p>
+                  <p style="font-size: 16px">Akshaya Nikhil</p>
+                  <p style="font-size: 16px">Urvi Harshad</p>
                 </div>
-                <!-- gallery photo description-->
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
               </div>
             </div>
-            <div class="gallery-section-item col-md-6 col-lg-6 col-xl-3">
-              <!-- gallery photo--><img src="../static/img/gallery-img-3.jpg" alt="gallery image">
-              <div class="gallery-section-detail">
-                <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
-                  <!-- sub heading section-->
-                  <h6 class="text-capitalize">traveling</h6>
-                  <!-- heading section-->
-                  <h2 class="text-capitalize">two weeks in mexico</h2>
+            <div class="col-sm-4 col-md-8 col-lg-4 mx-auto">
+              <div class="card-profile text-center">
+                <div class="card-profile-background"></div>
+                <div class="card-profile-content">
+                  <h6 class="text-capitalize" style="font-size: 28px">with best compliments</h6>
+                  <br>  
+                  <br>  
+                  <br>  
+                  <p style="font-size: 16px">Khushmati Rameshji</p>
+                  <p style="font-size: 16px">Jaya Rohitji</p>
+                  <p style="font-size: 16px">Richa Pratikji</p>
+                  <p style="font-size: 16px">Hemali Rahulji</p>
+                  <p style="font-size: 16px">Monica Bhaveshji</p>
                 </div>
-                <!-- gallery photo description-->
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
               </div>
             </div>
-            <div class="gallery-section-item col-md-6 col-lg-6 col-xl-3">
-              <!-- gallery photo--><img src="../static/img/gallery-img-4.jpg" alt="gallery image">
-              <div class="gallery-section-detail">
-                <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
-                  <!-- sub heading section-->
-                  <h6 class="text-capitalize">traveling</h6>
-                  <!-- heading section-->
-                  <h2 class="text-capitalize">two weeks in mexico</h2>
-                </div>
-                <!-- gallery photo description-->
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+          </div>
+          <br>  
+          <br>  
+          <br>  
+          <div class="section-header row justify-content-center">
+            <div class="col-sm-6 col-md-8 text-center">
+                <!-- sub heading section-->
+                <h6 class="text-capitalize" style="font-size:40px">special invite</h6>
+                <!-- heading section-->
+                <p style="font-size:25px">Bhavin, Chirag, Himanshu, Karan, Jimit, Kinjal, Silvi</p>
               </div>
+              <!-- section description-->
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="welcome-section" style="background-color: #79578e; padding-bottom: 50px">
+        <!-- <div class="section-background">
+          <div class="flower right" style=" right:2%;"><img style="height:300px" src="../static/img/bride1.png" alt="section background image"/></div>
+          <div class="flower left" style=" left:2%;"><img style="height:320px" src="../static/img/groom1.png" alt="section background image"/></div>
+        </div> -->
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="section-header">
+              <!-- <img src="../static/img/ganpati.png" alt="flower logo"/> -->
+              <!-- sub heading section-->
+              <h6 class="text-capitalize" style="font-size: 60px; color: #e2dbe7;">firms</h6>
+              <p style="font-size: 18px; color: #e2dbe7">MIT ENTERPRISE<br>H.M. TEXTILE<br>SOLANKI TEXTILE</p>
+              <br>  
+              <br>
+              <br>  
+              <h6 class="text-capitalize" style="font-size: 60px; color: #e2dbe7;">residence</h6>
+              <p style="font-size: 18px; color: #e2dbe7">439, Shivaji Nagar, Co-op. HSG. So.<br>N.M. Marg, Delisle Road<br>Lower Parel (E), Mumbai-13</p>
+              <br>
+              <br>
+              <br>
+              <br>  
+              <br>  
+              <br>  
+              <h6 class="text-capitalize" style="font-size: 70px; color: #e2dbe7;">blessings only</h6>
+            </div>
+          </div>
           </div>
         </div>
       </section>
       <!-- GIFT SECTION-->
       <section id="gift-section">
         <div class="container">
+          <div class="section-header"><img src="../static/img/ganpati.png" alt="flower logo"/>
+                <!-- sub heading section-->
+              <h6 class="text-capitalize" style="font-size:50px">our blessings</h6>
+                <!-- heading section-->
+          </div>
           <div class="row">
             <div class="owl-carousel owl-theme" >
                 {% for w in wishes %}
@@ -576,18 +745,20 @@
         </div>
         </div>
       </section>
+              
+               
       <!-- RSPV SECTION-->
       <section id="rspv-section">
         <div class="section-background">
-          <div class="flower right"><img src="../static/img/flower.png" alt="section background image"/></div>
-          <div class="flower left"><img src="../static/img/flower.png" alt="section background image"/></div>
+          <div class="flower right" style=" right:2%;"><img style="height:300px" src="../static/img/bride1.png" alt="section background image"/></div>
+          <div class="flower left" style=" left:2%;"><img style="height:320px" src="../static/img/groom1.png" alt="section background image"/></div>
         </div>
         <div class="container">
           <div class="row">
             <div class="rspv-section-head col-sm-12 col-lg-8 mx-auto" style="margin-bottom: -40px;">
-              <div class="section-header"><img src="../static/img/flower-bw.png" alt="flower logo"/>
+              <div class="section-header"><img style="top:-10px" src="../static/img/ganpati.png" alt="flower logo"/>
                 <!-- sub heading section-->
-                <h6 class="text-capitalize" style="font-size: 50px;">send a wish</h6>
+                <h6 class="text-capitalize" style="font-size: 50px; top:-30px">send a wish</h6>
               </div>
             </div>
             <div class="rspv-section-body col-sm-12 col-lg-10 mx-auto">
@@ -621,11 +792,13 @@
     </main>
     <footer>
       <!-- FOOTER SECTION-->
-      <section id="footer-section">
+      <section id="footer-section" style="background-image:url('../static/img/banner-img3.jpg');">
         <div class="container">
           <div class="row">
+            <img style="height: 150px; position: absolute; bottom:1%;left:40%" src="../static/img/logo2.png">
             <div class="col-sm-12 col-lg-6 mx-auto">
               <!-- the names of bride and the grooms name-->
+
               <h6 class="text-uppercase footer-head">jinal &amp; harshad</h6>
               <!-- footer heading-->
               <h1 class="text-capitalize footer-body">thank you</h1>
@@ -634,6 +807,7 @@
             </div>
           </div>
         </div>
+
       </section>
       <!-- SOUNDCLOUD PLAYER-->
       <div id="soundcloud-player">
@@ -650,7 +824,7 @@
     <script src="../static/js/jquery.localScroll/jquery.localScroll.min.js"></script>
     <script src="../static/js/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="../static/js/owl-carousel/owl.carousel.min.js"></script>
-    <script src="../static/js/main.js"></script>
+    <script src="../static/js/main.js"></script>    
     <script>
       $('.owl-carousel').owlCarousel({
       loop:true,
@@ -699,7 +873,7 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date("Dec 11, 2017 18:00:00").getTime();
+var deadline = new Date("Dec 11, 2017 13:00:00").getTime();
 initializeClock('clockdiv', deadline);
     </script>
   </body>
