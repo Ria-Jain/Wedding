@@ -29,6 +29,141 @@
         width: 100%;
        }
     </style>
+    <style>
+      #owl-demo .item{
+        margin: 3px;
+      }
+      #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    </style>
+    <style>
+      .row > .column {
+        padding: 0 8px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .column {
+        float: left;
+        width: 25%;
+      }
+
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 100;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+      }
+
+      /* Modal Content */
+      .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
+      }
+
+      /* The Close Button */
+      .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .mySlides {
+        display: none;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      .caption-container {
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: white;
+      }
+
+      img.demo {
+        opacity: 0.6;
+      }
+
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+
+      img.hover-shadow {
+        transition: 0.3s
+      }
+
+      .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+      }
+
+    </style>
   </head>
   <body>
     <header>
@@ -52,7 +187,7 @@
         </div>
       </nav> -->
       <!-- BANNER SECTION-->
-      <section id="banner-standart-1" style="background-image:url('../static/img/banner-img3.jpg');   ">
+      <section id="banner-standart-1" style="background-image:url('../static/img/banner.png');   ">
           <!-- <img style="height:150px;position: absolute; left:0;top:0;" src="../static/img/logo2.png"> -->
         <div class="container-fluid">
           <div class="banner-content">
@@ -94,81 +229,70 @@
     <main>
       <!-- WELCOME SECTION  -->
       <section id="welcome-section">
-        <div class="section-background">
+        <!-- <div class="section-background">
           <div class="flower right" style=" right:2%;"><img style="height:300px" src="../static/img/bride1.png" alt="section background image"/></div>
           <div class="flower left" style=" left:2%;"><img style="height:320px" src="../static/img/groom1.png" alt="section background image"/></div>
-        </div>
+        </div> -->
         <div class="container">
           <div class="row justify-content-center">
             <div class="section-header"><img src="../static/img/ganpati.png" alt="flower logo"/>
               <!-- sub heading section-->
-              <h6 class="text-capitalize" style="font-size: 40px">countdown to the special day</h6>
+              <h6 class="text-capitalize" style="font-size: 40px">special day is in ...</h6>
               <!-- heading section-->
             </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="section-body col-sm-8">
-              <!-- welcome message-->
-  <div id="clockdiv">
-    <div>
-      <span class="days"></span>
-      <div class="smalltext">Days</div>
-    </div>
-    <div>
-      <span class="hours"></span>
-      <div class="smalltext">Hours</div>
-    </div>
-    <div>
-      <span class="minutes"></span>
-      <div class="smalltext">Minutes</div>
-    </div>
-    <div>
-      <span class="seconds"></span>
-      <div class="smalltext">Seconds</div>
-    </div>
-  </div>
+          <!-- <div class="row justify-content-center" >
+            <div class="section-body col-sm-8" > -->
+              <div id="clockdiv" >
+                <div>
+                  <span class="days"></span>
+                  <div class="smalltext">Days</div>
+                </div>
+                <div>
+                  <span class="hours"></span>
+                  <div class="smalltext">Hours</div>
+                </div>
+                <div>
+                  <span class="minutes"></span>
+                  <div class="smalltext">Minutes</div>
+                </div>
+                <div>
+                  <span class="seconds"></span>
+                  <div class="smalltext">Seconds</div>
+                </div>
+              </div>
 
-            </div>
-          </div>
+            <!-- </div>
+          </div> -->
         </div>
       </section>
       <!-- BRIDE PROFILE SECTION-->
       <section id="bride-profile-section">
         <div class="profile-section-photo">
-          <!-- bride photo--><img src="../static/img/IMG_4646.png" alt="bride photo">
+          <!-- bride photo-->
         </div>
-        <div class="container-fluid" style="height:900px">   
-          <div class="row align-items-center" style="position: absolute;top: 10%; margin-left: -500px">
-            <div class="profile-section-detail col-sm-5 col-md-12 col-lg-6 col-xl-5 ml-auto">
-              <div class="profile-section-header">
-                <div class="section-header" ><img src="../static/img/ganpati2.png" alt="flower logo"/>
-                  <!-- sub heading section-->
+        <div class="container-fluid">   
+          <div class="row">
+            <div class="event-detail col-md-12 col-lg-6 align-self-center order-1">
+              <div class="event-detail-header" style="margin-top: 50px">
+                <div class="section-header"><img src="../static/img/ganpati.png" alt="flower logo"/>
                   <h6 class="text-capitalize">the bride</h6>
-                  <!-- heading section-->
                   <h2 class="text-capitalize">jinal jain</h2>
                 </div>
-              </div>
-              <div class="profile-section-body">
-                <!-- profile description-->
+              </div> 
+              <div class="profile-section-body" style="margin:10px">
+                
                 <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
                 <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
                 <p>Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
                 <p>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
               </div>
             </div>
-            <!-- <div class="profile-section-gallery col-sm-4 col-md-12 col-lg-6 col-xl-4">
-              <div class="profile-gallery-item bride-gallery">
-                <a href="../static/img/bride-gallery-1.jpg"><img src="../static/img/bride-gallery-1.jpg" alt="gallery photo"></a>
-              </div>
-              <div class="profile-gallery-item bride-gallery">
-                <a href="../static/img/bride-gallery-2.jpg"><img src="../static/img/bride-gallery-2.jpg" alt="gallery photo"></a>
-              </div>
-              <div class="profile-gallery-item bride-gallery">
-                <a href="../static/img/bride-gallery-3.jpg"><img src="../static/img/bride-gallery-3.jpg" alt="gallery photo"></a>
-              </div>
-            </div> -->
+            <div class="event-photo col-md-12 col-lg-6 order-2">
+              <!-- event photo--><img src="../static/img/jinal.png" alt="bride photo" style="width: 100%">
+            </div>
+
           </div>
-        </div>
       </section>
       <!-- BRIDE FAMILY SECTION-->
       <section id="family-section">
@@ -193,7 +317,7 @@
                     <div class="flower-right"><img src="../static/img/flower.png" alt="flower"></div>
                   </div>
                   <div class="card-profile-photo">
-                    <!-- the bridesmaid or groomsmain photo--><img src="../static/img/family-img-1.jpg" alt="card profile photo">
+                    <!-- the bridesmaid or groomsmain photo--><img src="../static/img/usha.png" alt="card profile photo">
                   </div>
                   <!-- the bridesmaid or groomsman title-->
                   <h6 class="text-capitalize">mom</h6>
@@ -213,7 +337,7 @@
                     <div class="flower-right"><img src="../static/img/flower.png" alt="flower"></div>
                   </div>
                   <div class="card-profile-photo">
-                    <!-- the bridesmaid or groomsmain photo--><img src="../static/img/family-img-2.jpg" alt="card profile photo">
+                    <!-- the bridesmaid or groomsmain photo--><img src="../static/img/jimit.png" alt="card profile photo">
                   </div>
                   <!-- the bridesmaid or groomsman title-->
                   <h6 class="text-capitalize">brother</h6>
@@ -233,7 +357,7 @@
                     <div class="flower-right"><img src="../static/img/flower.png" alt="flower"></div>
                   </div>
                   <div class="card-profile-photo">
-                    <!-- the bridesmaid or groomsmain photo--><img src="../static/img/family-img-3.jpg" alt="card profile photo">
+                    <!-- the bridesmaid or groomsmain photo--><img src="../static/img/rajesh.png" alt="card profile photo">
                   </div>
                   <!-- the bridesmaid or groomsman title-->
                   <h6 class="text-capitalize">dad</h6>
@@ -249,29 +373,50 @@
       </section>
       <!-- GROOM PROFILE SECTION-->
       <section id="groom-profile-section">
-        <div class="profile-section-photo">
-          <!-- the groom photo--><img src="../static/img/groom-bg.png" alt="groom photo">
-        </div>
-        <div class="container-fluid" style="height: 900px">   
-          <div class="row align-items-center" style="position: absolute;top: 10%;margin-right: -500px;">
-            <div class="profile-section-detail col-sm-5 col-md-12 col-lg-6 col-xl-5 mr-auto order-2">
-              <div class="profile-section-header">
-                <div class="section-header"><img src="../static/img/ganpati2.png" alt="flower logo"/>
-                  <!-- sub heading section-->
+        <!-- <div class="profile-section-photo">
+           the groom photo<img src="../static/img/jiju.png" alt="groom photo">
+        </div> -->
+        <div class="container-fluid">   
+          <div class="row">
+            <div class="event-detail col-md-12 col-lg-6 align-self-center order-1">
+              <div class="event-detail-header" style="margin-top: 50px">
+                <div class="section-header"><img src="../static/img/ganpati.png" alt="flower logo"/>
                   <h6 class="text-capitalize">the groom</h6>
-                  <!-- heading section-->
                   <h2 class="text-capitalize">harshad bafna</h2>
                 </div>
-              </div>
-              <div class="profile-section-body">
-                <!-- profile description-->
+              </div> 
+              <div class="profile-section-body" style="margin:10px">
+                
                 <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
                 <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
                 <p>Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
                 <p>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
               </div>
             </div>
-            <!-- <div class="profile-section-gallery col-sm-4 col-md-12 col-lg-6 col-xl-4 order-1">
+            <div class="event-photo col-md-12 col-lg-6 order-2">
+              <!-- event photo--><img src="../static/img/jiju.png" alt="groom photo" style="width: 100%">
+            </div>
+
+          </div>
+          <!-- <div class="row align-items-center">
+            <div class="profile-section-detail col-sm-5 col-md-12 col-lg-6 col-xl-5 mr-auto order-2">
+              <div class="profile-section-header">
+                <div class="section-header"><img src="../static/img/ganpati2.png" alt="flower logo"/>
+                  
+                  <h6 class="text-capitalize">the groom</h6>
+                  
+                  <h2 class="text-capitalize">harshad bafna</h2>
+                </div>
+              </div>
+              <div class="profile-section-body">
+                
+                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
+                <p>Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                <p>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+              </div>
+            </div>
+            <div class="profile-section-gallery col-sm-4 col-md-12 col-lg-6 col-xl-4 order-1">
               <div class="profile-gallery-item groom-gallery">
                 <a href="../static/img/groom-gallery-1.jpg"><img src="../static/img/groom-gallery-1.jpg" alt="gallery photo"></a>
               </div>
@@ -281,8 +426,8 @@
               <div class="profile-gallery-item groom-gallery">
                 <a href="../static/img/groom-gallery-3.jpg"><img src="../static/img/groom-gallery-3.jpg" alt="gallery photo"></a>
               </div>
-            </div> -->
-          </div>
+            </div>
+          </div> -->
         </div>
       </section>
       <!-- GROOM FAMILY SECTION-->
@@ -308,7 +453,7 @@
                     <div class="flower-right"><img src="../static/img/flower.png" alt="flower"></div>
                   </div>
                   <div class="card-profile-photo">
-                    <!-- the bridesmaid or groomsmain photo--><img src="../static/img/family-img-1.jpg" alt="card profile photo">
+                    <!-- the bridesmaid or groomsmain photo--><img src="../static/img/anita.png" alt="card profile photo">
                   </div>
                   <!-- the bridesmaid or groomsman title-->
                   <h6 class="text-capitalize">mom</h6>
@@ -328,7 +473,7 @@
                     <div class="flower-right"><img src="../static/img/flower.png" alt="flower"></div>
                   </div>
                   <div class="card-profile-photo">
-                    <!-- the bridesmaid or groomsmain photo--><img src="../static/img/family-img-2.jpg" alt="card profile photo">
+                    <!-- the bridesmaid or groomsmain photo--><img src="../static/img/bro.png" alt="card profile photo">
                   </div>
                   <!-- the bridesmaid or groomsman title-->
                   <h6 class="text-capitalize">brother</h6>
@@ -348,7 +493,7 @@
                     <div class="flower-right"><img src="../static/img/flower.png" alt="flower"></div>
                   </div>
                   <div class="card-profile-photo">
-                    <!-- the bridesmaid or groomsmain photo--><img src="../static/img/family-img-3.jpg" alt="card profile photo">
+                    <!-- the bridesmaid or groomsmain photo--><img src="../static/img/vimal.png" alt="card profile photo">
                   </div>
                   <!-- the bridesmaid or groomsman title-->
                   <h6 class="text-capitalize">dad</h6>
@@ -369,7 +514,7 @@
         </div> -->
         <div class="container">
           <div class="row justify-content-center">
-            <div class="section-header">
+            <div class="section-header" style="margin:10px">
               <!-- <img src="../static/img/ganpati.png" alt="flower logo"/> -->
               <!-- sub heading section-->
               <h6 class="text-capitalize" style="font-size: 80px; color: #e2dbe7;">invitation</h6>
@@ -426,7 +571,7 @@
                 <!-- event description-->
                 <!-- <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p> -->
               <!-- </div> -->
-              <div class="event-detail-footer"  style="position:absolute; left:37%;">
+              <div class="event-detail-footer"   style="width: 100%; text-align: center">
                 <div class="time">
                   <!-- event time-->
                   <h4>10:30AM</h4>
@@ -435,7 +580,7 @@
               </div>
             </div>
             <div class="event-photo col-md-12 col-lg-6 order-1">
-              <!-- event photo--><img src="https://i.pinimg.com/736x/bf/b3/e7/bfb3e73b19968e2b627e4cd6bdac72d1--the-groom-bride-groom.jpg" alt="event photo">
+              <!-- event photo--><img src="../static/img/baraatswagat.jpg" alt="event photo">
             </div>
           </div>
           <div class="row">
@@ -452,7 +597,7 @@
                 <!-- event description-->
                 <!-- <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p> -->
               <!-- </div> -->
-              <div class="event-detail-footer" style="position:absolute; left:37%;">
+              <div class="event-detail-footer" style="width: 100%; text-align: center">
                 <div class="time">
                   <!-- event time-->
                   <h4>11:00AM</h4>
@@ -478,7 +623,7 @@
                 <!-- event description-->
                 <!-- <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p> -->
               <!-- </div> -->
-              <div class="event-detail-footer" style="position:absolute; left:31.5%;">
+              <div class="event-detail-footer" style="width: 100%; text-align: center">
                 <div class="time">
                   <!-- event time-->
                   <h4>12:00-2:00PM</h4>
@@ -487,7 +632,7 @@
               </div>
             </div>
             <div class="event-photo col-md-12 col-lg-6 order-1">
-              <!-- event photo--><img src="../static/img/event-img-3.jpg" alt="event photo">
+              <!-- event photo--><img src="../static/img/pritibhoj.jpg" alt="event photo">
             </div>
           </div>
           <div class="row">
@@ -504,8 +649,8 @@
                 <!-- event description-->
                 <!-- <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p> -->
               <!-- </div> -->
-              <div class="event-detail-footer">
-                <div class="time" style="position: absolute;left: 35%">
+              <div class="event-detail-footer" style="width: 100%; text-align: center">
+                <div class="time">
                   <!-- event time-->
                   <h4>1:00-3:00PM</h4>
                 </div>
@@ -513,7 +658,7 @@
               </div>
             </div>
             <div class="event-photo col-md-12 col-lg-6 order-2">
-              <!-- event photo--><img src="http://md-img.matrimonycdn.com/sites/wp-content/uploads/nivoslider4wp_files/wp_2293_7_s.jpeg" alt="event photo">
+              <!-- event photo--><img src="../static/img/mayfair.jpeg" alt="event photo">
             </div>
           </div>
           <div class="row">
@@ -530,8 +675,8 @@
                 <!-- event description-->
                 <!-- <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p> -->
               <!-- </div> -->
-              <div class="event-detail-footer" >
-                <div class="time" style="position: absolute;left: 37.5%">
+              <div class="event-detail-footer" style="width: 100%; text-align: center">
+                <div class="time">
                   <!-- event time-->
                   <h4 style="font-size: 20px;">Godhulik Bela</h4>
                 </div>
@@ -539,21 +684,23 @@
               </div>
             </div>
             <div class="event-photo col-md-12 col-lg-6 order-1">
-              <!-- event photo--><img src="http://ranivimi.com/wp-content/uploads/2013/12/slider_041.jpg" alt="event photo">
+              <!-- event photo--><img src="../static/img/hastmilap.jpg" alt="event photo">
             </div>
           </div>
         </div>
       </section>
       <br>
       <br>
-      <h6 class="text-capitalize" style="font-size: 60px; color: #79578e; padding-bottom: 30px;padding-top: 10px">Venue</h6>
+      <h6 class="text-capitalize" style="font-size: 60px; color: #79578e;padding-top: 10px; ">Venue</h6>
               <div class="row">
-              <div class="col-md-6">
-                <p style="font-size:20px; color:#79578e; padding: 100px">MAYFAIR ROOMS,<br>254-C, Dr Annie Besant Road,<br>Worli, Mumbai-400030</p>
-              </div>  
-              <div class="col-md-6" style="text-align: center; margin-right: 0px; width: 30%">
+              <div style="text-align: center; width: 100%">
+                <p style="font-size:20px; color:#79578e; padding: 60px;">MAYFAIR ROOMS,<br>254-C, Dr Annie Besant Road,<br>Worli, Mumbai-400030</p>
+              </div>
+              </div>
+              <div class="row">  
+              <div style="text-align: center; width: 100%; margin-right:15px">
                   
-                  <div id="map" style="width: 95%"></div>
+                  <div id="map"></div>
                   <script>
                     function initMap() {
                       var uluru = {lat: 19.010108, lng: 72.821226};
@@ -714,32 +861,71 @@
           </div>
         </div>
       </section>
+      <section id="gift-section">
+        <div class="container">
+          <div class="section-header"><img src="../static/img/ganpati.png" alt="flower logo"/>
+              <h6 class="text-capitalize" style="font-size:50px">pre-wedding shoot</h6>
+          </div>
+          <div class="row" style="margin:10px">
+            <div id="owl-demo" class="owl-carousel owl-theme">
+              <div class="item">
+                <img src="../static/img/IMG_6978.jpg" alt=" " onclick="openModal();currentSlide(1)" class="hover-shadow">
+              </div>
+              <div class="item">
+                <img src="../static/img/IMG_6997.jpg" alt=" " onclick="openModal();currentSlide(2)" class="hover-shadow">
+              </div>
+              <div class="item">
+                <img src="../static/img/IMG_7005.jpg" alt=" " onclick="openModal();currentSlide(3)" class="hover-shadow">
+              </div>
+              <div class="item">
+                <img src="../static/img/banner-img.jpg" alt=" " onclick="openModal();currentSlide(4)" class="hover-shadow">
+              </div>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content" style="vertical-align: center">
+
+              <div class="mySlides">
+                <img src="../static/img/IMG_6978.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <img src="../static/img/IMG_6997.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <img src="../static/img/IMG_7005.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <img src="../static/img/banner-img.jpg" style="width:100%">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- GIFT SECTION-->
       <section id="gift-section">
         <div class="container">
           <div class="section-header"><img src="../static/img/ganpati.png" alt="flower logo"/>
-                <!-- sub heading section-->
               <h6 class="text-capitalize" style="font-size:50px">our blessings</h6>
-                <!-- heading section-->
           </div>
-          <div class="row">
+          <div class="row" style="margin:10px">
             <div class="owl-carousel owl-theme" >
                 {% for w in wishes %}
                   <div class="gift-card mx-auto">
                     <div class="gift-card-body" style="position: relative;min-height: 200px;">
                     <div class="item"> 
-                      <!-- <div> 
-                          <h6 class="text-capitalize" style="font-size: 40px; color: #79578e;">{{w.author}}</h6>
-                      </div> -->
                       <div>  
                         <p>"{{w.text}}"</p>
                       </div>
                       <div> 
                           <h6 class="text-capitalize" style="font-size: 40px; color: #79578e;position: absolute; bottom: 0;right:  0">-{{w.author}}</h6>
                       </div>
-                      <!-- <div>
-                        <p style="position: absolute; bottom: 0; left: 50%;">-{{w.author}}</p>
-                      </div> -->
                     </div>
                   </div>
                   </div>
@@ -752,10 +938,10 @@
                
       <!-- RSPV SECTION-->
       <section id="rspv-section">
-        <div class="section-background">
+        <!-- <div class="section-background">
           <div class="flower right" style=" right:2%;"><img style="height:300px" src="../static/img/bride1.png" alt="section background image"/></div>
           <div class="flower left" style=" left:2%;"><img style="height:320px" src="../static/img/groom1.png" alt="section background image"/></div>
-        </div>
+        </div> -->
         <div class="container">
           <div class="row">
             <div class="rspv-section-head col-sm-12 col-lg-8 mx-auto" style="margin-bottom: -40px;">
@@ -795,10 +981,9 @@
     </main>
     <footer>
       <!-- FOOTER SECTION-->
-      <section id="footer-section" style="background-image:url('../static/img/banner-img3.jpg');">
+      <section id="footer-section" style="background-image:url('../static/img/banner.png');">
         <div class="container">
           <div class="row">
-            <img style="height: 150px; position: absolute; bottom:1%;right:5%" src="../static/img/logo2.png">
             <div class="col-sm-12 col-lg-6 mx-auto">
               <!-- the names of bride and the grooms name-->
 
@@ -807,6 +992,7 @@
               <h1 class="text-capitalize footer-body">thank you</h1>
               <!-- footer messages-->
               <p class="text-uppercase footer-foot">we hope to see you and your spouse there</p>
+              <img src="../static/img/logo2.png" style="height:150px; margin-top: 10px">
             </div>
           </div>
         </div>
@@ -834,6 +1020,17 @@
       margin:10,
       nav:true,
       slideBy:3,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+              nav:true
+          },
+          600:{
+              items:3,
+              nav:true
+          }
+      }
   })
     </script>
     <script>
@@ -878,6 +1075,59 @@ function initializeClock(id, endtime) {
 
 var deadline = new Date("Dec 11, 2017 13:00:00").getTime();
 initializeClock('clockdiv', deadline);
+    </script>
+    <script>
+      $(document).ready(function() {
+ 
+        $("#owl-demo").owlCarousel({
+       
+            autoPlay: 3000, //Set AutoPlay to 3 seconds
+       
+            items : 4,
+            itemsDesktop : [1199,3],
+            itemsDesktopSmall : [979,3]
+       
+        });
+       
+      });
+    </script>
+    <script>
+      function openModal() {
+        document.getElementById('myModal').style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
     </script>
   </body>
 
