@@ -28,7 +28,7 @@ h1{
 }
 
 #clockdiv div > span{
-	padding: 15px;
+	padding: 5px;
 	/*border-radius: 3px;*/
 	background: #f2e4eb;
 	display: inline-block;
@@ -36,7 +36,6 @@ h1{
 }
 
 .smalltext{
-	padding-top: 5px;
-	font-size: 20px;
+	font-size: 25px;
 
 }
