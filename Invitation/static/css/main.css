@@ -566,9 +566,9 @@ a:hover {
 }
 
 #banner-standart-1 .banner-sub-heading h2 {
-  padding: 15px 30px;
-  border-top: 4px dotted #beadc9;
-  border-bottom: 4px dotted #beadc9;
+  padding: 0px 30px;
+  /*border-top: 4px dotted #beadc9;*/
+  /*border-bottom: 4px dotted #beadc9;*/
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   line-height: 14px;
@@ -580,7 +580,7 @@ a:hover {
 
 #banner-standart-1 .banner-sub-heading h2::before, #banner-standart-1 .banner-sub-heading h2::after {
   content: "";
-  background: #beadc9;
+  background: #fff3f1;
   width: 10px;
   height: 10px;
   border-radius: 100%;
