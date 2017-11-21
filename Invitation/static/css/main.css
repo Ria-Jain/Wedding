@@ -578,7 +578,7 @@ a:hover {
   position: relative;
 }
 
-#banner-standart-1 .banner-sub-heading h2::before, #banner-standart-1 .banner-sub-heading h2::after {
+/*#banner-standart-1 .banner-sub-heading h2::before, #banner-standart-1 .banner-sub-heading h2::after {
   content: "";
   background: #fff3f1;
   width: 10px;
@@ -589,7 +589,7 @@ a:hover {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}
+}*/
 
 #banner-standart-1 .banner-sub-heading h2::before {
   left: 0;
