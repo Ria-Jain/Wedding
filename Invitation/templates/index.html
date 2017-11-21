@@ -918,16 +918,16 @@
             <div class="owl-carousel owl-theme" >
                 {% for w in wishes %}
                   <div class="gift-card mx-auto">
-                    <div class="gift-card-body" style="position: relative;min-height: 200px;">
-                    <div class="item"> 
-                      <div>  
-                        <p>"{{w.text}}"</p>
-                      </div>
-                      <div> 
-                          <h6 class="text-capitalize" style="font-size: 40px; color: #79578e;position: absolute; bottom: 0;right:  0">-{{w.author}}</h6>
+                    <div class="gift-card-body" style="position: relative;min-height: 300px;">
+                      <div class="item"> 
+                        <div>  
+                          <p>"{{w.text}}"</p>
+                        </div>
+                        <div> 
+                            <h6 class="text-capitalize" style="font-size: 40px; color: #79578e;position: absolute; bottom: 0;right:  0">-{{w.author}}</h6>
+                        </div>
                       </div>
                     </div>
-                  </div>
                   </div>
                 {% endfor %}
             </div>
